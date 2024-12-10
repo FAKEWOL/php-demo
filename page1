@@ -1,0 +1,15 @@
+<?php
+    $sayilar=array();
+    for($i=1;$i<=5;$i++)
+    {
+        array_unshift($sayilar,rand(1,10));
+    }
+
+    echo"<pre>";
+    print_r($sayilar);
+    echo"Dizideki Eleman Sayısı: ". count($sayilar). "<br>";
+    echo"Dizideki Sayısal Değerlerin Toplamı:" . array_sum($sayilar)."<br>";
+    echo"Dizideki Sayısal Değerlerin çarpımı:" . array_product($sayilar)."<br>";
+    echo"<pre>";
+    print_r(array_count_values($sayilar));    
+    ?>
